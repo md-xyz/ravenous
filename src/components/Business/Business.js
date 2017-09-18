@@ -9,6 +9,7 @@ class Business extends React.Component {
           <div className="image-container">
             <img src={this.props.business.imageSrc} alt=''/>
           </div>
+          </a>
           <h2>{this.props.business.name}</h2>
           <div className="Business-information">
             <div className="Business-address">
@@ -22,7 +23,6 @@ class Business extends React.Component {
               <p>{this.props.business.reviewCount} reviews</p>
             </div>
           </div>
-          </a>
         </div>
       );
     }
