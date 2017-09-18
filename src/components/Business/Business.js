@@ -5,6 +5,7 @@ class Business extends React.Component {
     render() {
       return (
         <div className="Business">
+          <a href={this.props.business.url} target="_blank">
           <div className="image-container">
             <img src={this.props.business.imageSrc} alt=''/>
           </div>
@@ -21,6 +22,7 @@ class Business extends React.Component {
               <p>{this.props.business.reviewCount} reviews</p>
             </div>
           </div>
+          </a>
         </div>
       );
     }
